@@ -32,3 +32,32 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello World...")
 }
+
+
+// ------------------------------------------------------------------------
+
+// Stack(Primitive), Heap (Non-Primitive)
+
+let myName = "Anubhav Gupta";
+let anotherName = myName
+
+anotherName = "Anubh"
+
+//console.log(myName); // the output'll be the Anubhav Gupta because stack just copy the value and variable and paste it into another variable. 
+//console.log(anotherName); // the output will be Anubh because when we change the value then it will not change the original variable, it just changed the copy of the original variable.
+
+
+// Heap:
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "anubhav@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+// the value of email changed in both of varible because in heap it just give the original value to another variable and all changes we do in another variable are also changed in first variable
