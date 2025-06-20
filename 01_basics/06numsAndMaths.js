@@ -18,3 +18,26 @@ console.log(newNumber.toPrecision(3)); // it basically precise the decimal numbe
 const amount = 52000000
 console.log(amount.toLocaleString('en-IN')); // for indian number system type.
 console.log(amount.toLocaleString()); // for the US number system type.
+
+//----------------------------------MATHS---------------------------------------//
+
+console.log(Math); //Math is a Object not a fucntion and it carry many of property in it.
+console.log(Math.abs(-5)); //Math.abs() is used to get the absolute values (the negative integers to positive integers)
+console.log(Math.round(5.654)); //Math.round() is used to get the round off value of the decimal value.
+console.log(Math.ceil(8.2)); // Math.ceil() is used to get the value higher round off value of the decimal value.
+console.log(Math.floor(4.5)); //Maths.floor() is used to get the value lower round off value of the decimal value.
+
+console.log(Math.min(4,5,7,2,9)); //Math.min() is used to get the minimum value from the given array.
+console.log(Math.max(4,5,7,2,9)); //Math.min() is used to get the maximum value from the given array.
+
+//The most Important Math Property which is used in js is Math.random()
+
+console.log(Math.random()); // gives a random value between 0 and 1.
+console.log((Math.random()*10) + 1); // gives random value between 1 and 10. (can be a decimal number)
+console.log(Math.floor(Math.random()*10) + 1); // gives random value between 1 and 10. (only a whole number)
+console.log(Math.floor(Math.random()*6) + 1); // gives random value between 1 and 6. (only a whole number)
+
+const minLimit = 10
+const maxLimit = 20
+
+console.log(Math.floor(Math.random() * (maxLimit - minLimit + 1)) + minLimit) // it is a formula to get any random value within a limit
