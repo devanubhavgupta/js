@@ -34,10 +34,62 @@
     //     console.log(e)
     // }, false)
 
-    // type, timestamp, preventDefault
-    // target, toElement, srcElement, currentTarget
-    // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
+//-------------------------------------------------------------------------------------------------------------------
+    // type: tells you what kind of event happened (click, keydown, etc.) 
+
+    // document.querySelector("#sita").addEventListener('mouseout', function(e){
+    //     console.log(e.type);
+    // })
+
+    // timestamp: gives the time(in ms) when the event occured.
+
+    // document.querySelector('#ram').addEventListener('click', function(e){
+    //     console.log(e.timeStamp);
+    // })
+
+    // preventDefault: prevents the default action- like stopping a form from submitting.
+
+    // target: givesthe actual element that triggered the event.
+    
+    // toElement: same as target, mostly for internet explorer.
+
+    // srcElement: also similar to target but used in older browsers (IE)
+ 
+    // currentTarget: gives the element on which the event listener was attached.
+
+    // clientX, clientY: tells the X & Y coordinates of the mouse click-relative to the browser window.
+
+    // document.addEventListener('click', function(e){
+    //     console.log(`ClientX: ${e.clientX}, ClientY: ${e.clientY}`)
+    // })
+
+    // screenX, screenY: gives mouse coordinates relatives to the screen(monitor).
+
+    // document.addEventListener('click', function (e) {
+    //     console.log(`screenX: ${e.screenX} screenY: ${e.screenY}`)
+    // })    
+
+    // altkey, ctrlkey, shiftkey: return true if these keys were held while the event occured.
+
+    // document.addEventListener('click', function(e){
+    //     if (e.ctrlkey) {
+    //         console.log('ctrl key was held');
+    //     }
+    //     if (e.shiftKey) {
+    //         console.log('shift key was held');
+    //     }
+    //     if (e.altKey) {
+    //         console.log('alt key was held');
+    //     }
+    // })
+
+    // keyCode: (used for keyboard events)- gives numeric code of the key passed. Now it is outdated, we use event.key more often.
+
+    // document.addEventListener('click', function(e){
+    //     console.log(e.keycode)
+    // })
+
+//-------------------------------------------------------------------------------------------------------------------
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside then ul")
@@ -55,16 +107,16 @@
     // }, false)
 
     // basically a real life project, of deleting images on click
-    document.querySelector('#images').addEventListener('click', function(e) {
-        console.log(e.target.tagName)
-        if (e.target.tagName === 'IMG') {
-        console.log(e.target.id)
-        }
+    // document.querySelector('#images').addEventListener('click', function(e) {
+    //     console.log(e.target.tagName)
+    //     if (e.target.tagName === 'IMG') {
+    //     console.log(e.target.id)
+    //     }
        
-        let removeIt = e.target.parentNode
-        removeIt.remove()
+    //     let removeIt = e.target.parentNode
+    //     removeIt.remove()
        
-    })
+    // })
 
      // removeIt.parentNode.removeChild(removeIt)
 </script>
