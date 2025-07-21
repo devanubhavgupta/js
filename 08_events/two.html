@@ -14,11 +14,11 @@
         console.log("Anubhav");
     }
 
-    const chnageText = function(){
+    const changeText = function(){
         document.querySelector('h1').innerHTML = "I'm The best."
     }
 
-    const changeMe = setTimeout(chnageText, 2000)
+    const changeMe = setTimeout(changeText, 2000)
 
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
